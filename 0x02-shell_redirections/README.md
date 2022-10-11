@@ -11,5 +11,6 @@ I learnt and understand
 ###Tasks
 
 Script Command               |        Description
------------------------------| ----------------------------------------
+---------------------------- | ----------------------------------------
 - 0.Hello World              | This bash script prints "Hello, World"				    | followed by a new line to the standard
+---------------------------- | -----------------------------------------
