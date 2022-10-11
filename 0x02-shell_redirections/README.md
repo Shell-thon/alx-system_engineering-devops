@@ -9,8 +9,6 @@ I learnt and understand
 
 ###Tasks
 
-|Script Commands| |Description|
-|:--------------:|-----------:|
-| -0. Hello World| Bash script that prints "Hello, World" followed by a new line to the standard output|
-| -1. Confused smiley| Bash script that displays a confused smiley "(Ôo)'.|
-
+|Script Commands|                                                                                                           |Description|
+|:---------------------------------|----------------------------------------------------------------------------------------------------|
+| - 0. Hello World                 | Bash script that prints "Hello, World" followed by a new line to the standard output.              |
