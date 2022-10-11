@@ -10,9 +10,21 @@ I learnt and understand
 
 ###Tasks
 
-Script Command                         Description
+Script Command               |          Description
 --------------------------   |   ---------------------------
 			     |
 			     |
 			     |
 			     |
+			     |
+                             |
+                             |
+                             |
+			     |
+                             |
+                             |
+                             |
+			     |
+                             |
+                             |
+                             |
