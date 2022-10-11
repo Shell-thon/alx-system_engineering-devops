@@ -1,4 +1,0 @@
-How do I find the nth line in a file in Linux command line?
-How do I display line number x to line number y?
-In Linux, there are several ways to achieve the same result. Printing specific lines from a file is no exception.
-To display the 13th line, you can use a combination of head and tail:
