@@ -7,10 +7,10 @@ I learnt and understand
 - How to send the output from one program to the input of another program
 - How to combine commands and filters with redirections
 
-
 ###Tasks
 
-Script Command               |        Description
----------------------------- | ----------------------------------------
-- 0.Hello World              | This bash script prints "Hello, World"				    | followed by a new line to the standard
----------------------------- | -----------------------------------------
+|Script Commands| |Description|
+|:--------------:|-----------:|
+| -0. Hello World| Bash script that prints "Hello, World" followed by a new line to the standard output|
+| -1. Confused smiley| Bash script that displays a confused smiley "(Ôo)'.|
+
