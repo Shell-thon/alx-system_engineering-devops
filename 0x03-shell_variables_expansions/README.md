@@ -1,4 +1,4 @@
-#Shell, init files, variables and expansions
+# Shell, init files, variables and expansions
 
 In this project I learnt and understand the following
 Variables
@@ -16,9 +16,9 @@ Expansions
     - What is the difference between single and double quotes and how to use them properly
     - How to do command substitution with $() and backticks
 
-###Tasks
+### Tasks
 
-**0. <o>**
-        *0-alias: script that creates an alias.
+** 0. <o> **
+        * 0-alias: script that creates an alias.
 	    Name: ls
 	    Value: rm 
