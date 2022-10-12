@@ -18,6 +18,7 @@ Expansions
 
 ### Tasks
 
-     ** 0-alias ** : script that creates an alias.
-	    * Name : ls
-	    * Value : rm 
+      **0-alias** script that creates an alias.
+
+	    *command is ls
+	    *Value is rm 
