@@ -18,8 +18,7 @@ Expansions
 
 ### Tasks
 
-| Command  | Description |                                                      
-
-| :------- | ----------: |                                                                                                                            
-| 0-alias  | script that creates an alias of ls with value of rm \* |                                                                                 
+|Command   | Description |
+| :------- | ----------: |
+| 0-alias  | script that creates an alias of ls with value of rm \* |
 | git diff | script that creates an alias |
