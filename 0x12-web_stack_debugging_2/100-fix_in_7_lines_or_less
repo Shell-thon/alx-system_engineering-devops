@@ -1,0 +1,7 @@
+#!/usr/bin/evn bash
+#run nginx as nginx advanced
+sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+sed -i -E "s/(listen.*)80 /\18080 /g" /etc/nginx/sites-available/default
+chomd 644 /etc/nginx/nginx.conf
+pkill apache2
+sudo -u nginx service nginx restart
