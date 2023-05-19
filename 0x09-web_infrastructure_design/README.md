@@ -30,7 +30,7 @@
      │            Response: Web Pages and Content               │
      │<─────────────────────────────────────────────────────────│
      │                         │
-</details>
+<details>
 ```
    
 # 0x09. Web Infrastructure Design
