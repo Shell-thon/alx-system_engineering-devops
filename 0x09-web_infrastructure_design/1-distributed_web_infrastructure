@@ -1,3 +1,7 @@
+
+<details>
+<summary>Web Infrastructure Description</summary>
+```diff
 User's       Internet          Load Balancer      Server 1        Server 2
 Computer                                              │               │
    │                      │                         ▼               ▼
@@ -25,3 +29,5 @@ Computer                                              │               │
    │          Response: Web Pages and Content                      │
    │<─────────────────────────────────────────────────────────────│
    │                      │
+</details>
+```
