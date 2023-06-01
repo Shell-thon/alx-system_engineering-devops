@@ -1,4 +1,4 @@
-## 0x15. JavaScript - Web jQuery
+# 0x15. JavaScript - Web jQuery
 
 ### Concepts
 For this project, we expect you to look at these concepts:
@@ -55,4 +55,8 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 - HTML should not reload for each action: DOM manipulation, update values, fetch 
 ### More Info
 **Import JQuery**
-dataelsedonAPI
+```
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+```
