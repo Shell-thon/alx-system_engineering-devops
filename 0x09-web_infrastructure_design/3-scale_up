@@ -1,0 +1,27 @@
+User's       Internet          Load Balancer      Server 1        Server 2
+Computer                                              │               │
+   │                                                  ▼               ▼
+   │Request: www.foobar.com│                   ┌───────────┐  ┌───────────┐
+   │───────────────────────>                   │ Web Server│  │ Web Server│
+   │                      │                    │  (Nginx)  │  │  (Nginx)  │
+   │                      │                    └───────────┘  └───────────┘
+   │                      │                           │                │
+   │                      │         Request: Dynamic Content           │
+   │                      │──────────────────────────────────────────> │
+   │                      │                           ▼                ▼
+   │                      │                    ┌───────────┐  ┌───────────┐
+   │                      │                    │Application│  │Application│
+   │                      │                    │  Server 1 │  │  Server 2 │
+   │                      │                    └───────────┘  └───────────┘
+   │                      │                           │               │
+   │                      │         Request: Database Query           │
+   │                      │──────────────────────────────────────────>│
+   │                      │                           ▼               ▼
+   │                      │                  ┌───────────┐    ┌───────────┐
+   │                      │                  │  Database │    │  Database │
+   │                      │                  │  (MySQL)  │    │  (MySQL)  │
+   │                      │                  └───────────┘    └───────────┘
+   │                      │                                           │
+   │          Response: Web Pages and Content                         │
+   │<─────────────────────────────────────────────────────────────────│
+   │                      │
