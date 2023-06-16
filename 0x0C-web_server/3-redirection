@@ -1,16 +1,26 @@
 #!/usr/bin/env bash
-# Installs nginx web server
 
+# Installs nginx web server
 apt-get update
 apt-get install -y nginx
-echo "Holberton School" > /etc/nginx/html/index.html
+
+# Create a custom index.html file
+echo "Hello world!" > /var/www/html/index.html
+
+# Create a new Nginx configuration file for redirection
 echo "server {
     listen 80;
     listen [::]:80 default_server;
-    root   /etc/nginx/html;
+    root   /var/www/html;
     index  index.html;
+
     location /redirect_me {
-        return 301 https://twitter.com/@shell.terminal;
+        return 301 https://twitter.com/shell.terminal;
     }
-}" > /etc/nginx/sites-available/default
+}" > /etc/nginx/sites-available/redirection
+
+# Enable the new Nginx configuration file
+ln -s /etc/nginx/sites-available/redirection /etc/nginx/sites-enabled/redirection
+
+# Restart Nginx
 service nginx restart
