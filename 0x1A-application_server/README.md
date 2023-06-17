@@ -1,45 +1,34 @@
-# Application server
+# 0x1A. Application server
 
-This was the application deployment project for our AirBnB clone. In this
-project, I configured Nginx on the web servers provided me by 	ALX
-to serve a WSGI Flask app running through Gunicorn. Additionally, I set up an
-Upstart script to keep the application running on server reboots.
+## Concepts
+For this project, we expect you to look at these concepts:
 
-## Tasks :page_with_curl:
+- Web Server
+- Server
+- Web stack debugging
 
-* **0. Set up development with Python**
-  * In this task, I configured the file `web_flask/0-hello_route.py` from my
-* **1. Set up production with Gunicorn**
-  * This task involved setting up a production environment, installing and configuring
-  Gunicorn to serve the same file from task 0.
+## Background Context
+Your web infrastructure is already serving web pages via Nginx that you installed in your first web stack project. While a web server can also serve dynamic content, this task is usually given to an application server. In this project you will add this piece to your infrastructure, plug it to your Nginx and make it serve your Airbnb clone project.
 
-* **2. Serve a page with Nginx**
-  * [2-app_server-nginx_config](./2-app_server-nginx_config): Nginx configuration file
-  proxying requests on the route `/airbnb-onepage/` to the Gunicorn app running on
-  port `5000`.
+## Resources
+Read or watch:
 
-* **3. Add a route with query parameters**
-  * [3-app_server-nginx_config](./3-app_server-nginx_config): Nginx configuration file
-  proxying requests on the route `/airbnb-dynamic/number_odd_or_even/<int: num>` to the
-  Gunicorn app running on port `5000`.
+- [Application server vs web server](https://www.nginx.com/resources/glossary/application-server-vs-web-server/)
+- [How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04](https://www.youtube.com/watch?v=goToXTC96Co) (As mentioned in the video, do not install Gunicorn using virtualenv, just install everything globally)
+- [Running Gunicorn](https://docs.gunicorn.org/en/latest/run.html)
+- Be careful with the way Flask manages slash in route - strict_slashes
+- [Upstart documentation](http://upstart.ubuntu.com/cookbook/)
 
-* **4. Let's do this for your API**
-  * In this task, I configured the API from my [AirBnB_clone_v3](./https://github.com/cm-amos/AirBnB_clone_v3) to run on Gunicorn.
-  * [4-app_server-nginx_config](./4-app_server-nginx_config): Nginx configuration file
-  that proxies requests on the AirBnB API to the corresponding Gunicorn app.
+## Requirements
+### General
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- Everything Python-related must be done using `python3`
+- All config files must have comments
 
-* **5. Serve your AirBnB clone**
-  * In this task, I configured the complete AirBnB app from [AirBnB_clone_v4](https://github.com/cm-amos/AirBnB_clone_v4) to run on Gunicorn and be served through Nginx.
-  * [5-app_server-nginx_config](./5-app_server-nginx_config): Nginx configuration file
-  configured to serve the static assets from `web_dynamic/static/` on the Gunicorn AirBnB
-  app.
-
-* **6. Deploy it**
-  * [gunicorn.conf](./gunicorn.conf): Configuration file for an Upstart script that starts a
-  Gunicorn process bounded to port 5003 that serves the content from task 5.
-  * The Gunicorn process spawns three worker processes and logs errors to `/tmp/airbnb-error.log`,
-  access to `/tmp/airbnb-access.log`.
-
-* **7. No service interruption**
-  * [4-reload_gunicorn_no_downtime](./4-reload_gunicorn_no_downtime): Bash script that gracefully
-  reloads Gunicorn.
+### Bash Scripts
+- All your files will be interpreted on Ubuntu 16.04 LTS
+- All your files should end with a new line
+- All your Bash script files must be executable
+- Your Bash script must pass Shellcheck (version 0.3.7-5~ubuntu16.04.1 via apt-get) without any error
+- The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
+- The second line of all your Bash scripts should be a comment explaining what the script is doing
