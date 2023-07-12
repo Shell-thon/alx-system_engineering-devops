@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # prints processes
 
-ps -aufx
+ps -aufx | grep bash
